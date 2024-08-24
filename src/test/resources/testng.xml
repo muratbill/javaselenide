@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MyTestSuite" parallel="tests" thread-count="2">
+    <listeners>
+        <!-- Allure listener for TestNG -->
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+    <test name="Cucumber Test">
+        <classes>
+            <class name="common.TestRunner"/>
+        </classes>
+    </test>
+</suite>
